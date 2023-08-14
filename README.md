@@ -109,6 +109,7 @@ CREATE TABLE [dbo].[Enrollments](
 	PRIMARYKEY(SectionId, ParticipantId)
 	); 
 ```
+#### + Reviews :man: :girl: 
 
 ```sql
 CREATE TABLE [dbo].[Reviews](
