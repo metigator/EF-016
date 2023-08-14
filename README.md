@@ -109,6 +109,15 @@ CREATE TABLE [dbo].[Enrollments](
 	PRIMARYKEY(SectionId, ParticipantId)
 	); 
 ```
+
+```sql
+CREATE TABLE [dbo].[Reviews](
+	[Id] [int] PRIMARY KEY,
+	[Feedback] [nvarchar](max) NULL,
+	[CourseId] [int] NOT NULL REFERENCES Course(Id),
+	[CreatedAt] [datetime2](7) NOT NULL
+);
+```
 ##### + Stored Procedure GetSectionDetais
 ```sql
 USE [EF015]
